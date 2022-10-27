@@ -10,7 +10,7 @@ function timer() {
   const Ref = useRef(null);
 
   // The state for our timer
-  const [timeLeft, setTimer] = useState("00:00:00");
+  const [timeLeft, setTimer] = useState("00:00:00:00");
 
   const getTimeRemaining = (e) => {
     const total = Date.parse(e) - Date.parse(new Date());
