@@ -35,12 +35,12 @@ function timer() {
       // add '0' at the beginning of the variable
       setTimer(
         (days > 9 ? days : "0" + days) +
-          ":" +
-          (hours > 9 ? hours : "0" + hours) +
-          ":" +
-          (minutes > 9 ? minutes : "0" + minutes) +
-          ":" +
-          (seconds > 9 ? seconds : "0" + seconds)
+        ":" +
+        (hours > 9 ? hours : "0" + hours) +
+        ":" +
+        (minutes > 9 ? minutes : "0" + minutes) +
+        ":" +
+        (seconds > 9 ? seconds : "0" + seconds)
       );
     }
   };
@@ -82,7 +82,7 @@ function timer() {
     clearTimer(getDeadTime());
   };
 
-  return <div>{timeLeft}</div>;
+  return <span>{timeLeft}</span>;
 }
 
 export default timer;
