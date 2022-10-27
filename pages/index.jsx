@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Timer from "../components/Timer";
+import { BsFillCircleFill } from 'react-icons/bs'
 
 export default function Home() {
   return (
@@ -14,10 +15,14 @@ export default function Home() {
       </Head>
       <div className="flex items-center justify-center bg-[url('../components/macos-high-sierra-default-wallpaper-fall-mountain-scene-1.jpg')] bg-cover bg-no-repeat w-full h-screen">
         <div className="h-[80%] w-[80%] bg-black border rounded-lg">
-          <div className="h-10 bg-slate-300  ">
-            Terminal example
+          <div className="flex  items-center h-10 bg-slate-300  ">
+            <BsFillCircleFill className="text-red-400 pl-1" />
+            <BsFillCircleFill className="text-yellow-400 pl-1" />
+            <BsFillCircleFill className="text-green-400 pl-1" />
+            <span className="pl-[37%]">gJahnke-bash</span>
           </div>
-          <div className="text-5xl font-mono text-green-400/95 ">
+          <div className=" text-xl font-roboto-mono text-green-400/95 ">gJahnke@duck-os:~$ countdown -divorce </div>
+          <div className=" text-xl font-roboto-mono text-green-400/95 flex justify-center pt-[30%]">
             <Timer />
           </div>
         </div>
