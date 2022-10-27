@@ -15,8 +15,8 @@ export default function Home() {
         />
       </Head>
       <div className="flex items-center justify-center bg-[url('../components/macos-high-sierra-default-wallpaper-fall-mountain-scene-1.jpg')] bg-cover bg-no-repeat w-full h-screen">
-        <Draggable handle="#handle">
-          <div className="h-[400px] sm:h-[80%] max-h-[600px] w-[80%] bg-black border rounded-lg">
+        <Draggable handle="#handle" bounds="parent">
+          <div className="h-[400px] sm:h-[80%] max-h-[600px] w-[80%] max-w-[900px] bg-black border rounded-lg">
             <div id="handle" className="flex  items-center h-10 bg-slate-300  ">
               <BsFillCircleFill className="text-red-400 h-5 w-5 pl-1" />
               <BsFillCircleFill className="text-yellow-400 h-5 w-5 pl-1" />
@@ -26,7 +26,7 @@ export default function Home() {
             <div className=" sm:text-xl font-roboto-mono text-green-400/95 ">
               gJahnke@duck-os:~$ countdown -divorce{" "}
             </div>
-            <div className=" sm:text-xl font-roboto-mono text-green-400/95 flex justify-center pt-[30%]">
+            <div className=" sm:text-xl font-roboto-mono text-green-400/95 flex justify-center items-center h-full pb-10">
               <Timer />
             </div>
           </div>
