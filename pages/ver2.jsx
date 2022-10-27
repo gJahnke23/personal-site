@@ -23,7 +23,7 @@ export default function Home() {
             >
               <BsFillCircleFill className="text-red-400 h-5 w-5 pl-1 drop-shadow-md" />
               <BsFillCircleFill className="text-yellow-400 h-5 w-5 pl-1 drop-shadow-md" />
-              <BsFillCircleFill className="text-green-399 h-5 w-5 pl-1 drop-shadow-md" />
+              <BsFillCircleFill className="text-green-400 h-5 w-5 pl-1 drop-shadow-md" />
               <div className="mx-auto">gJahnke-bash</div>
             </div>
             <div className=" sm:text-xl font-roboto-mono text-green-400/95 ">
